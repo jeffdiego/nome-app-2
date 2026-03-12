@@ -1,8 +1,9 @@
 
 import './App.css'
+import Saudacao from './components/Saudacao'
 
 const nome = 'Angelo'
-const logado = true
+const logado = false
 
 function App() {
   return (
@@ -12,7 +13,10 @@ function App() {
 
       <h3>Olá meu nome é {nome}</h3>
       <h2>Idade: {10+35}</h2>
-      {logado ?  <p>Usuário Logado</p> : <p>Faça login para acessar o conteúdo</p> }
+      
+
+      <Saudacao 
+      logado ={logado}/>
 
 
     </>
